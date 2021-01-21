@@ -31,7 +31,6 @@ function userSignUp() {
     *** USER LOGIN ***
     ************************** */
     function userLogin() {
-    //  console.log('userLogin Function Called')
     let userEmail = document.getElementById('emailLogin').value;
     let userPass = document.getElementById('pwdLogin').value;
     console.log(userEmail, userPass);
