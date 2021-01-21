@@ -8,6 +8,9 @@ let user = require('./controllers/usercontroller');
 let calc = require("./controllers/calulatorcontroller");
 
 sequelize.sync();
+
+app.use(require('./middleware/headers'));
+
 app.use(express.json());
 
 app.use('/user', user);
